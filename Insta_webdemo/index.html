@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 메인 컨테이너 -->
+    <div class="instagram-container">
+      <!-- 왼쪽 사이드바 -->
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <!-- Instagram 로고 -->
+          <div class="logo">
+            <h1>Instagram</h1>
+          </div>
+
+          <!-- 네비게이션 메뉴 -->
+          <nav class="nav-menu">
+            <a href="#" class="nav-item active" data-page="home">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-text">홈</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">🔍</span>
+              <span class="nav-text">검색</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">🧭</span>
+              <span class="nav-text">탐색 탭</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">🎬</span>
+              <span class="nav-text">릴스</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">💬</span>
+              <span class="nav-text">메시지</span>
+              <span class="notification-badge">99+</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">❤️</span>
+              <span class="nav-text">알림</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">➕</span>
+              <span class="nav-text">만들기</span>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+              <span class="nav-icon">👤</span>
+              <span class="nav-text">프로필</span>
+            </a>
+          </nav>
+
+          <!-- 더 보기 -->
+          <div class="more-menu">
+            <a href="#" class="nav-item">
+              <span class="nav-icon">☰</span>
+              <span class="nav-text">더 보기</span>
+            </a>
+          </div>
+
+          <!-- Meta 앱 -->
+          <div class="meta-app">
+            <a href="#" class="nav-item">
+              <span class="nav-icon">🌐</span>
+              <span class="nav-text">Meta의 다른 앱</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 메인 콘텐츠 영역 -->
+      <main class="main-content">
+        <!-- 홈 피드 -->
+        <div id="home-page" class="page active">
+          <!-- 스토리 섹션 -->
+          <div class="stories-section">
+            <div class="stories-container">
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=1" alt="jiyeol">
+                </div>
+                <span class="story-username">jiyeol</span>
+              </div>
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=2" alt="tkfkddhgo">
+                </div>
+                <span class="story-username">tkfkddhge...</span>
+              </div>
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=3" alt="hyunaa">
+                </div>
+                <span class="story-username">hyunaa_</span>
+              </div>
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=4" alt="bemyxan">
+                </div>
+                <span class="story-username">bemyxan</span>
+              </div>
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=5" alt="lim_takko">
+                </div>
+                <span class="story-username">lim_takko...</span>
+              </div>
+              <div class="story-item">
+                <div class="story-avatar">
+                  <img src="https://picsum.photos/56/56?random=6" alt="day02n">
+                </div>
+                <span class="story-username">day02n</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 피드 포스트 -->
+          <div class="feed-section">
+            <article class="post">
+              <div class="post-header">
+                <div class="post-user-info">
+                  <img src="https://picsum.photos/32/32?random=10" alt="cnu_blue_56th" class="post-avatar">
+                  <span class="post-username">cnu_blue_56th</span>
+                  <span class="post-time">• 1시간</span>
+                </div>
+                <button class="post-menu">⋯</button>
+              </div>
+              <div class="post-image">
+                <img src="https://picsum.photos/470/470?random=100" alt="충남대학교 e스포츠대회">
+              </div>
+              <div class="post-actions">
+                <div class="action-buttons">
+                  <button class="action-btn">❤️</button>
+                  <button class="action-btn">💬</button>
+                  <button class="action-btn">📤</button>
+                </div>
+                <button class="bookmark-btn">🔖</button>
+              </div>
+              <div class="post-likes">
+                <span class="likes-count">좋아요 127개</span>
+              </div>
+              <div class="post-caption">
+                <span class="username">cnu_blue_56th</span>
+                충남대학교 e스포츠대회 LCC | LOL CHAMPIONS CNU
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 프로필 페이지 -->
+        <div id="profile-page" class="page">
+          <div class="profile-header">
+            <div class="profile-info">
+              <div class="profile-avatar">
+                <img src="https://picsum.photos/150/150?random=200" alt="web.alien">
+              </div>
+              <div class="profile-details">
+                <div class="profile-meta">
+                  <h2 class="username">web.alien</h2>
+                  <button class="follow-btn">팔로우</button>
+                  <button class="profile-menu">⚙️</button>
+                  <button class="more-options">⋯</button>
+                </div>
+                <div class="profile-stats">
+                  <span class="stat">게시물 <strong>7</strong></span>
+                  <span class="stat">팔로워 <strong>23</strong></span>
+                  <span class="stat">팔로우 <strong>23</strong></span>
+                </div>
+                <div class="profile-bio">
+                  <div class="bio-text">영만~~~~~캘게인</div>
+                  <div class="bio-tags">
+                    @kyoungho_@_jeonghoon11 @a0.xxn @ji_soo__78 @h0ur_2 @imxxstar @h_igh_hyunjun
+                  </div>
+                  <div class="bio-link">hyuk.ahh님이 팔로우합니다</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-content">
+            <div class="content-tabs">
+              <button class="tab active">🌐</button>
+              <button class="tab">👤</button>
+            </div>
+            <div class="posts-grid">
+              <div class="grid-post">
+                <img src="https://picsum.photos/293/293?random=301" alt="Post 1">
+              </div>
+              <div class="grid-post">
+                <img src="https://picsum.photos/293/293?random=302" alt="Post 2">
+              </div>
+              <div class="grid-post">
+                <img src="https://picsum.photos/293/293?random=303" alt="Post 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- 우측 사이드바 -->
+      <aside class="right-sidebar">
+        <div class="user-suggestion">
+          <div class="current-user">
+            <img src="https://picsum.photos/44/44?random=400" alt="nana_o_nanana" class="user-avatar">
+            <div class="user-info">
+              <span class="username">nana_o_nanana</span>
+              <span class="user-status">전환</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="suggestions-section">
+          <div class="section-header">
+            <span class="section-title">회원님을 위한 추천</span>
+            <a href="#" class="see-all">모두 보기</a>
+          </div>
+
+          <div class="suggestion-item">
+            <img src="https://picsum.photos/32/32?random=401" alt="nnseohm" class="suggestion-avatar">
+            <div class="suggestion-info">
+              <span class="suggestion-username">nnseohm</span>
+              <span class="suggestion-reason">Instagram님 외 32명이 팔로우합니다</span>
+            </div>
+            <button class="follow-suggestion-btn">팔로우</button>
+          </div>
+
+          <div class="suggestion-item">
+            <img src="https://picsum.photos/32/32?random=402" alt="instagram" class="suggestion-avatar">
+            <div class="suggestion-info">
+              <span class="suggestion-username">instagram</span>
+              <span class="suggestion-reason">fly_juhyun님 외 5명이 팔로우합니다</span>
+            </div>
+            <button class="follow-suggestion-btn">팔로우</button>
+          </div>
+
+          <div class="suggestion-item">
+            <img src="https://picsum.photos/32/32?random=403" alt="artart.today" class="suggestion-avatar">
+            <div class="suggestion-info">
+              <span class="suggestion-username">artart.today</span>
+              <span class="suggestion-reason">jbro_0302님 외 24명이 팔로우합니다</span>
+            </div>
+            <button class="follow-suggestion-btn">팔로우</button>
+          </div>
+
+          <div class="suggestion-item">
+            <img src="https://picsum.photos/32/32?random=404" alt="ji_a_z7" class="suggestion-avatar">
+            <div class="suggestion-info">
+              <span class="suggestion-username">ji_a_z7</span>
+              <span class="suggestion-reason">khj_2012님 외 7명이 팔로우합니다</span>
+            </div>
+            <button class="follow-suggestion-btn">팔로우</button>
+          </div>
+
+          <div class="suggestion-item">
+            <img src="https://picsum.photos/32/32?random=405" alt="web.alien" class="suggestion-avatar">
+            <div class="suggestion-info">
+              <span class="suggestion-username">web.alien</span>
+              <span class="suggestion-reason">hyuk.ahh님이 팔로우합니다</span>
+            </div>
+            <button class="follow-suggestion-btn">팔로우</button>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-text">
+            소개 · 도움말 · 홍보 센터 · API · 채용 정보<br>
+            개인정보처리방침 · 약관 · 위치 · 언어 · Meta Verified
+          </div>
+          <div class="copyright">© 2025 INSTAGRAM FROM META</div>
+        </div>
+
+        <!-- 메시지 플로팅 아이콘 -->
+        <div class="floating-message">
+          <div class="message-icon">
+            <span class="message-badge">99+</span>
+            💬 메시지
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
